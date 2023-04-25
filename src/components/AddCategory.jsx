@@ -1,10 +1,10 @@
-import { useState } from "react"
+import { useState } from 'react';
 
 export const AddCategory = () => {
-  const [inputValue, setinputValue] = useState('')
+  const [inputValue, setinputValue] = useState('');
   const onInputChange = (e) => {
-    setinputValue(e.target.value)
-  }
+    setinputValue(e.target.value);
+  };
 
   return (
     <input
@@ -13,5 +13,5 @@ export const AddCategory = () => {
       onChange={onInputChange}
       value={inputValue}
     />
-  )
-}
+  );
+};
