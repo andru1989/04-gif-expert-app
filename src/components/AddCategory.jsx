@@ -6,12 +6,19 @@ export const AddCategory = () => {
     setinputValue(e.target.value);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(inputValue);
+  };
+
   return (
-    <input
-      type='text'
-      placeholder='Buscar gifs'
-      onChange={onInputChange}
-      value={inputValue}
-    />
+    <form onSubmit={handleSubmit}>
+      <input
+        type='text'
+        placeholder='Buscar gifs'
+        onChange={onInputChange}
+        value={inputValue}
+      />
+    </form>
   );
 };
